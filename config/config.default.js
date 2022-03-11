@@ -16,24 +16,24 @@ module.exports = appInfo => {
 
   config.mysql ={
     client: {
-      host: 'hspprogrammer.tpddns.cn',
+      host: '',
       // 端口号
-      port: '13306',
+      port: '3306',
       // 用户名
-      user: 'qywx',
+      user: '',
       // 密码
-      password: 'hspadmin',
+      password: '',
       // 数据库名
-      database: 'qywx_clock',
+      database: '',
     },
   }
   config.sequelize = {
-    dialect: 'mysql',
-    host: 'hspprogrammer.tpddns.cn',
-    username: 'qywx',
-    password: 'hspadmin',
-    port: 13306,
-    database: 'qywx_clock',
+    dialect: '',
+    host: '',
+    username: '',
+    password: '',
+    port: 3306,
+    database: '',
   };
   config.validate = {
     // 配置参数校验器，基于parameter
@@ -43,19 +43,19 @@ module.exports = appInfo => {
   }
   config.redis = {
     client: {
-      port: 16379,          // Redis port
-      host: 'hspprogrammer.tpddns.cn',   // Redis host
-      password: "hspAdmin",
-      db: 1,
+      port: 6379,          // Redis port
+      host: '',   // Redis host
+      password: "",
+      db: 0,
     },
   }
   const userConfig = {
     // myAppName: 'egg',
     qnConfig:{
-      accessKey:"iiwyLaeAWLZnU313VAxhB9jXG15XIU7qgTjjNL1C",
-      secretKey:"8EhVmEGcB56cDIln26TqFhvLCpippzACAvEkglMR",
-      bucket:"hsp-dev-space", //空间名
-      baseUrl:"http://qndevcdn.bluepeng.club/"
+      accessKey:"",
+      secretKey:"",
+      bucket:"", //空间名
+      baseUrl:""
     }
   };
 
